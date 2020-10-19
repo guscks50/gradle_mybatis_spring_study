@@ -8,14 +8,11 @@ import javax.sql.DataSource;
 import org.apache.ibatis.io.Resources;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-import org.springframework.transaction.PlatformTransactionManager;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
-/* @EnableTransactionManagement */
 public class ContextDataSource {
 
 	@Bean
@@ -33,6 +30,5 @@ public class ContextDataSource {
 		}
 		return dataSource;
 	}
-	
 	
 }

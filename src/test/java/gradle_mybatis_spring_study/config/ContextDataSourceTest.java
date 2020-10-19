@@ -14,8 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import gradle_mybatis_spring_study.config.ContextDataSource;
-import gradle_mybatis_spring_study.config.ContextRoot;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { ContextRoot.class })
@@ -24,9 +22,9 @@ public class ContextDataSourceTest {
 
 	@Autowired
 	private DataSource dataSource;
-	
+
 	@After
-	public void testDown() throws Exception{
+	public void testDown() throws Exception {
 		System.out.println();
 	}
 
